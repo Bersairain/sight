@@ -29,6 +29,8 @@ namespace Sight.communicate
         /// </summary>
         public int Port { get; set; }
 
+        public bool IsConnected => throw new NotImplementedException();
+
         // 添加运行标志
         private bool _isRunning = false;
         private readonly object _lock = new object();

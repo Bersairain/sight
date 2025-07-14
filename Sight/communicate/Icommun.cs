@@ -21,6 +21,9 @@ namespace Sight.communicate
         /// <returns></returns>  
         bool openport(string st1,string st2);
         void closeport();
+
+        // 添加连接状态属性
+        bool IsConnected { get; }
         /// <summary>
         /// 用于Socket发送
         /// </summary>

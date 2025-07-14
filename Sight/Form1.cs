@@ -24,24 +24,6 @@ namespace Sight
 {
     public partial class Form1 : MaterialForm
     {
-        //#region
-        ///// <summary>*****************************
-        /////海康相机类
-        ///// </summary>****************************
-        //MyCamera.MV_CC_DEVICE_INFO_LIST m_stDeviceList = new MyCamera.MV_CC_DEVICE_INFO_LIST();
-        //bool m_bGrabbing = false;
-        //Thread m_hReceiveThread = null;
-        //MyCamera.MV_FRAME_OUT_INFO_EX m_stFrameInfo = new MyCamera.MV_FRAME_OUT_INFO_EX();
-        //// ch:用于从驱动获取图像的缓存 | en:Buffer for getting image from driver
-        //UInt32 m_nBufSizeForDriver = 0;
-        //IntPtr m_BufForDriver = IntPtr.Zero;
-        //private static Object BufForDriverLock = new Object();
-        //private MyCamera m_MyCamera = new MyCamera();
-        ///// <summary>*****************************
-        ///// 海康相机方法
-        ///// </summary>****************************
-
-        //#endregion
         //相机名称
         String camerakind = null;
         bool grablock = true;
@@ -93,7 +75,7 @@ namespace Sight
             int p = GetPrivateProfileString("Cameratype", "type", "null", lpReturnedString, 10,INIStr);
             camerakind = lpReturnedString.ToString();
             InitializeComponent();
-            
+            modbusfalse();
             List<string> cameranum = cameraserve.Instance.Get_DeviceList();
             try
             {
@@ -113,7 +95,7 @@ namespace Sight
             //将通讯选项置为Tcp
             communcombo.SelectedItem = communcombo.Items[3];
             //设置初始服务器ip和端口(无论用不用)（后续改为ini或其他）
-            txt_ipsev.Text = "127.0.0.5";
+            txt_ipsev.Text = "127.0.0.1";
             txt_portsev.Text = "3000";
 
             //设置初始客户端ip和端口(无论用不用)
@@ -135,21 +117,6 @@ namespace Sight
  
         }
         // 线程安全的日志更新
-        private void UpdateLog(string data)
-        {
-            if (RTX_socketreceive.InvokeRequired)
-            {
-                RTX_socketreceive.Invoke(new Action<string>(UpdateLog), data);
-            }
-            else
-            {
-                //RTX_receivesev.AppendText($"{DateTime.Now:HH:mm:ss} - {data}\n");
-                RTX_socketreceive.AppendText(data);
-                RTX_socketreceive.SelectionStart = RTX_socketreceive.Text.Length;
-                RTX_socketreceive.ScrollToCaret();
-            }
-        }
-
         
 
         private void tabPage1_Click(object sender, EventArgs e)
@@ -353,6 +320,11 @@ namespace Sight
             //    MessageBox.Show("请先连接Modbus主站");
             //    return;
             //}
+            if (!ReconnectModbus())
+            {
+                MessageBox.Show("连接失败，请检查设置");
+                return;
+            }
             try
             {
                 // 获取输入参数
@@ -393,6 +365,113 @@ namespace Sight
             {
                 txt_modbustcpread.AppendText($"读取错误: {ex.Message}\n");
             }
+        }
+        #region
+        private bool ReconnectModbus()
+        {
+            try
+            {
+                if (icommun != null && icommun.IsConnected)
+                    return true;
+
+                icommun?.closeport();
+                return icommun.openport(txt_modbusip.Text, txt_modbusport.Text);
+            }
+            catch
+            {
+                return false;
+            }
+        }
+        private void UpdateLog(string data)
+        {
+            if (RTX_socketreceive.InvokeRequired)
+            {
+                RTX_socketreceive.Invoke(new Action<string>(UpdateLog), data);
+            }
+            else
+            {
+                //RTX_receivesev.AppendText($"{DateTime.Now:HH:mm:ss} - {data}\n");
+                RTX_socketreceive.AppendText(data);
+                RTX_socketreceive.SelectionStart = RTX_socketreceive.Text.Length;
+                RTX_socketreceive.ScrollToCaret();
+            }
+        }
+
+        private void modbusfalse()
+        {
+            txt_modbusip.Enabled = false;
+            txt_modbusport.Enabled = false;
+            btn_modbustcpon.Enabled = false;
+            btn_modbustcpoff.Enabled = false;
+            comboBox1.Enabled = false;
+            txt_slaveid.Enabled = false;
+            txt_startaddress.Enabled = false;
+            txt_number.Enabled = false;
+            txt_modbustcpread.Enabled = false;
+            txt_modbustcpwrite.Enabled = false;
+            btn_modbustcpread.Enabled = false;
+            btn_modbustcpwrite.Enabled=false;
+        }
+        private void modbustrue()
+        {
+            txt_modbusip.Enabled = true;
+            txt_modbusport.Enabled = true;
+            btn_modbustcpon.Enabled = true;
+            btn_modbustcpoff.Enabled = true;
+            comboBox1.Enabled = true;
+            txt_slaveid.Enabled = true;
+            txt_startaddress.Enabled = true;
+            txt_number.Enabled = true;
+            txt_modbustcpread.Enabled = true;
+            txt_modbustcpwrite.Enabled = true;
+            btn_modbustcpread.Enabled = true;
+            btn_modbustcpwrite.Enabled = true;
+        }
+        private void socketfalse()
+        {
+            txt_ipsev.Enabled = false;
+            txt_portsev.Enabled = false;
+            btn_sockettcpon.Enabled = false;
+            btn_sockettcpoff.Enabled = false;
+            RTX_socketreceive.Enabled = false;
+            RTX_socketsend.Enabled = false;
+            btn_sendsockettcp.Enabled = false;
+        }
+        private void sockettrue()
+        {
+            txt_ipsev.Enabled = true;
+            txt_portsev.Enabled = true;
+            btn_sockettcpon.Enabled = true;
+            btn_sockettcpoff.Enabled = true;
+            RTX_socketreceive.Enabled = true;
+            RTX_socketsend.Enabled = true;
+            btn_sendsockettcp.Enabled = true;
+        }
+        #endregion
+
+        private void communcombo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            switch (communcombo.Text) 
+            {
+                case "ModbusTcp从站":
+                    socketfalse();
+                    modbustrue();
+                    break;
+                case "ModbusTcp主站":
+                    socketfalse();
+                    modbustrue();
+                    break;
+                case "TCP客户端":
+                    modbusfalse();
+                    sockettrue();
+                    break;
+                case "TCP服务器":
+                    modbusfalse();
+                    sockettrue();
+                    break;
+
+            }
+                 
         }
     }
 }

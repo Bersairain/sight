@@ -645,7 +645,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(171, 284);
+            this.label14.Location = new System.Drawing.Point(174, 284);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(102, 23);
             this.label14.TabIndex = 3;
@@ -708,7 +708,7 @@
             // 
             // txt_number
             // 
-            this.txt_number.Location = new System.Drawing.Point(110, 332);
+            this.txt_number.Location = new System.Drawing.Point(120, 332);
             this.txt_number.Name = "txt_number";
             this.txt_number.Size = new System.Drawing.Size(51, 34);
             this.txt_number.TabIndex = 4;
@@ -722,14 +722,14 @@
             // 
             // txt_startaddress
             // 
-            this.txt_startaddress.Location = new System.Drawing.Point(275, 281);
+            this.txt_startaddress.Location = new System.Drawing.Point(289, 281);
             this.txt_startaddress.Name = "txt_startaddress";
             this.txt_startaddress.Size = new System.Drawing.Size(51, 34);
             this.txt_startaddress.TabIndex = 4;
             // 
             // txt_slaveid
             // 
-            this.txt_slaveid.Location = new System.Drawing.Point(110, 281);
+            this.txt_slaveid.Location = new System.Drawing.Point(120, 281);
             this.txt_slaveid.Name = "txt_slaveid";
             this.txt_slaveid.Size = new System.Drawing.Size(51, 34);
             this.txt_slaveid.TabIndex = 4;
@@ -754,6 +754,7 @@
             this.communcombo.Name = "communcombo";
             this.communcombo.Size = new System.Drawing.Size(261, 31);
             this.communcombo.TabIndex = 1;
+            this.communcombo.SelectedIndexChanged += new System.EventHandler(this.communcombo_SelectedIndexChanged);
             // 
             // label5
             // 

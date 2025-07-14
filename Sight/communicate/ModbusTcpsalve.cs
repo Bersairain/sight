@@ -22,6 +22,8 @@ namespace Sight.communicate
         public bool IsRunning = false;
         private CancellationTokenSource _cancellationTokenSource;
 
+        public bool IsConnected => throw new NotImplementedException();
+
         public event Action<string> OnDataReceived;
         public event Action<string> OnStatusChanged;
 

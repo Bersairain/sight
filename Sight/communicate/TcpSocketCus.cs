@@ -17,6 +17,8 @@ namespace Sight.communicate
         private Thread _receiveThread;
         private volatile bool _isRunning = false;
 
+        public bool IsConnected => throw new NotImplementedException();
+
         public event Action<string> OnDataReceived;
         public event Action<string> OnStatusChanged;
 
