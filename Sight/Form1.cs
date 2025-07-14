@@ -303,46 +303,95 @@ namespace Sight
                 // 获取输入参数
                 byte slaveId = byte.Parse(txt_slaveid.Text);
                 ushort startAddress = ushort.Parse(txt_startaddress.Text);
-                ushort numberOfPoints = ushort.Parse(txt_number.Text);
                 string function = comboBox1.Text;
+                string data = txt_modbustcpwrite.Text.Trim();
 
-                // 根据选择的功能执行操作
+                // 根据选择的功能执行写入操作
                 switch (function)
                 {
-                    case "读线圈":
-                        bool[] coils = icommun.ReadCoils(slaveId, startAddress, numberOfPoints);
-                        //txt_modbustcpreceive.AppendText($"线圈状态: {string.Join(", ", coils)}\n");
+                    case "写单个线圈":
+                        bool coilValue = bool.Parse(data);
+                        icommun.WriteSingleCoil(slaveId, startAddress, coilValue);
+                        txt_modbustcpwrite.AppendText($"写入线圈成功: {coilValue}\n");
                         break;
 
-                    case "写线圈":
-                        // 解析发送框中的数据（true/false）
-                        string[] coilValues = txt_modbustcpsend.Text.Split(',');
+                    case "写多个线圈":
+                        string[] coilValues = data.Split(',');
                         bool[] coilData = coilValues.Select(v => bool.Parse(v.Trim())).ToArray();
                         icommun.WriteMultipleCoils(slaveId, startAddress, coilData);
-                        //txt_modbustcpreceive.AppendText($"写入线圈成功\n");
+                        txt_modbustcpwrite.AppendText($"写入多个线圈成功: {data}\n");
                         break;
 
-                    case "读寄存器":
-                        ushort[] registers = icommun.ReadHoldingRegisters(slaveId, startAddress, numberOfPoints);
-                        //txt_modbustcpreceive.AppendText($"寄存器值: {string.Join(", ", registers)}\n");
+                    case "写单个寄存器":
+                        ushort regValue = ushort.Parse(data);
+                        icommun.WriteSingleRegister(slaveId, startAddress, regValue);
+                        txt_modbustcpwrite.AppendText($"写入寄存器成功: {regValue}\n");
                         break;
 
-                    case "写寄存器":
-                        // 解析发送框中的数据（数字）
-                        string[] regValues = txt_modbustcpsend.Text.Split(',');
+                    case "写多个寄存器":
+                        string[] regValues = data.Split(',');
                         ushort[] regData = regValues.Select(v => ushort.Parse(v.Trim())).ToArray();
                         icommun.WriteMultipleRegisters(slaveId, startAddress, regData);
-                        //txt_modbustcpreceive.AppendText($"写入寄存器成功\n");
+                        txt_modbustcpwrite.AppendText($"写入多个寄存器成功: {data}\n");
                         break;
 
                     default:
-                        MessageBox.Show("请选择有效的功能");
+                        MessageBox.Show("请选择有效的写入功能");
                         break;
                 }
             }
             catch (Exception ex)
             {
-                //txt_modbustcpreceive.AppendText($"错误: {ex.Message}\n");
+                txt_modbustcpwrite.AppendText($"写入错误: {ex.Message}\n");
+            }
+        }
+
+        private void btn_modbustcpread_Click(object sender, EventArgs e)
+        {
+            //if (icommun == null || !((ModbusTcpmaster)icommun).IsConnected)
+            //{
+            //    MessageBox.Show("请先连接Modbus主站");
+            //    return;
+            //}
+            try
+            {
+                // 获取输入参数
+                byte slaveId = byte.Parse(txt_slaveid.Text);
+                ushort startAddress = ushort.Parse(txt_startaddress.Text);
+                ushort numberOfPoints = ushort.Parse(txt_number.Text);
+                string function = comboBox1.Text;
+
+                // 根据选择的功能执行读取操作
+                switch (function)
+                {
+                    case "读取线圈":
+                        bool[] coils = icommun.ReadCoils(slaveId, startAddress, numberOfPoints);
+                        txt_modbustcpread.AppendText($"线圈状态: {string.Join(", ", coils)}\n");
+                        break;
+
+                    case "读取离散输入":
+                        bool[] inputs = icommun.ReadInputs(slaveId, startAddress, numberOfPoints);
+                        txt_modbustcpread.AppendText($"离散输入状态: {string.Join(", ", inputs)}\n");
+                        break;
+
+                    case "读取保持寄存器":
+                        ushort[] holdingRegs = icommun.ReadHoldingRegisters(slaveId, startAddress, numberOfPoints);
+                        txt_modbustcpread.AppendText($"保持寄存器值: {string.Join(", ", holdingRegs)}\n");
+                        break;
+
+                    case "读取输入寄存器":
+                        ushort[] inputRegs = icommun.ReadInputRegisters(slaveId, startAddress, numberOfPoints);
+                        txt_modbustcpread.AppendText($"输入寄存器值: {string.Join(", ", inputRegs)}\n");
+                        break;
+
+                    default:
+                        MessageBox.Show("请选择有效的读取功能");
+                        break;
+                }
+            }
+            catch (Exception ex)
+            {
+                txt_modbustcpread.AppendText($"读取错误: {ex.Message}\n");
             }
         }
     }

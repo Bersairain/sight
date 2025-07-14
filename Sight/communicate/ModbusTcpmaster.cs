@@ -17,8 +17,13 @@ namespace Sight.communicate
     public class ModbusTcpmaster : Icommun
     {
         //用于创建主站的客户端
-        public Socket socketcus;
+        public TcpClient socketcus;
         public IModbusMaster modbusMaster;
+        ModbusFactory factory;
+        // 添加连接状态属性
+        //public bool IsConnected => socketcus?.Connected ?? false;
+        // 添加心跳定时器
+        private System.Threading.Timer keepAliveTimer;
 
         //Socket显示用
         public event Action<string> OnDataReceived;
@@ -42,16 +47,54 @@ namespace Sight.communicate
             try
             {
                 // 1：创建socket()
-                socketcus = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+                //socketcus = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
                 // 2：设置IP和端口。
-                IPEndPoint ipe = new IPEndPoint(IPAddress.Parse(ip), Convert.ToInt32(port));
+                //IPEndPoint ipe = new IPEndPoint(IPAddress.Parse(ip), Convert.ToInt32(port));
                 try
                 {
-                    socketcus.Connect(ipe);
-                    var factory = new ModbusFactory();
-                    modbusMaster = factory.CreateMaster(socketcus);
+                    // 先关闭现有连接
+                    closeport();
 
-                    OnStatusChanged?.Invoke($"已连接到服务器 {ip}:{port}");
+                    // 创建新的TCP连接
+                    socketcus = new TcpClient();
+
+                    // 设置连接超时
+                    var connectResult = socketcus.BeginConnect(ip, Convert.ToInt32(port), null, null);
+                    if (!connectResult.AsyncWaitHandle.WaitOne(3000)) // 3秒连接超时
+                    {
+                        OnStatusChanged?.Invoke("连接超时");
+                        return false;
+                    }
+
+                    socketcus.EndConnect(connectResult);
+
+                    // 设置发送和接收超时
+                    socketcus.SendTimeout = 3000;
+                    socketcus.ReceiveTimeout = 3000;
+                    //socketcus.Connect(ipe);
+                    factory = new ModbusFactory();
+                        modbusMaster = factory.CreateMaster(socketcus);
+
+                        OnStatusChanged?.Invoke($"已连接到服务器 {ip}:{port}");
+                        // 添加心跳机制（每5秒发送一次）
+                        //keepAliveTimer = new System.Threading.Timer(_ =>
+                        //{
+                        //    if (IsConnected)
+                        //    {
+                        //        try
+                        //        {
+                        //            // 读取0号寄存器（无实际操作，仅保持连接）
+                        //            modbusMaster.ReadHoldingRegisters(0, 0, 1);
+                        //        }
+                        //        catch
+                        //        {
+                        //            // 心跳失败时关闭连接
+                        //            closeport();
+                        //            OnStatusChanged?.Invoke("心跳检测失败，连接已关闭");
+                        //        }
+                        //    }
+                        //}, null, 5000, 5000);
+                    
                     return true;
                 }
                 catch (Exception exp)

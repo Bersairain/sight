@@ -70,29 +70,29 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.txt_modbustcpwrite = new System.Windows.Forms.RichTextBox();
+            this.btn_modbustcpread = new System.Windows.Forms.Button();
+            this.btn_modbustcpwrite = new System.Windows.Forms.Button();
+            this.txt_modbustcpread = new System.Windows.Forms.RichTextBox();
             this.btn_modbustcpoff = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.btn_modbustcpon = new System.Windows.Forms.Button();
+            this.txt_number = new System.Windows.Forms.TextBox();
             this.txt_modbusip = new System.Windows.Forms.TextBox();
+            this.txt_startaddress = new System.Windows.Forms.TextBox();
+            this.txt_slaveid = new System.Windows.Forms.TextBox();
             this.txt_modbusport = new System.Windows.Forms.TextBox();
             this.communcombo = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.txt_startaddress = new System.Windows.Forms.TextBox();
-            this.txt_number = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.txt_slaveid = new System.Windows.Forms.TextBox();
-            this.txt_modbustcpread = new System.Windows.Forms.RichTextBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.txt_modbustcpsend = new System.Windows.Forms.RichTextBox();
-            this.btn_modbustcpsend = new System.Windows.Forms.Button();
-            this.btn_modbustcpread = new System.Windows.Forms.Button();
             this.materialTabControl1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -531,9 +531,9 @@
             // 
             // groupBox5
             // 
-            this.groupBox5.Controls.Add(this.txt_modbustcpsend);
+            this.groupBox5.Controls.Add(this.txt_modbustcpwrite);
             this.groupBox5.Controls.Add(this.btn_modbustcpread);
-            this.groupBox5.Controls.Add(this.btn_modbustcpsend);
+            this.groupBox5.Controls.Add(this.btn_modbustcpwrite);
             this.groupBox5.Controls.Add(this.txt_modbustcpread);
             this.groupBox5.Controls.Add(this.btn_modbustcpoff);
             this.groupBox5.Controls.Add(this.comboBox1);
@@ -558,6 +558,42 @@
             this.groupBox5.TabIndex = 3;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "ModbusTcp通讯";
+            // 
+            // txt_modbustcpwrite
+            // 
+            this.txt_modbustcpwrite.Location = new System.Drawing.Point(6, 497);
+            this.txt_modbustcpwrite.Name = "txt_modbustcpwrite";
+            this.txt_modbustcpwrite.Size = new System.Drawing.Size(378, 34);
+            this.txt_modbustcpwrite.TabIndex = 9;
+            this.txt_modbustcpwrite.Text = "";
+            // 
+            // btn_modbustcpread
+            // 
+            this.btn_modbustcpread.Location = new System.Drawing.Point(6, 428);
+            this.btn_modbustcpread.Name = "btn_modbustcpread";
+            this.btn_modbustcpread.Size = new System.Drawing.Size(93, 40);
+            this.btn_modbustcpread.TabIndex = 7;
+            this.btn_modbustcpread.Text = "读取";
+            this.btn_modbustcpread.UseVisualStyleBackColor = true;
+            this.btn_modbustcpread.Click += new System.EventHandler(this.btn_modbustcpread_Click);
+            // 
+            // btn_modbustcpwrite
+            // 
+            this.btn_modbustcpwrite.Location = new System.Drawing.Point(6, 537);
+            this.btn_modbustcpwrite.Name = "btn_modbustcpwrite";
+            this.btn_modbustcpwrite.Size = new System.Drawing.Size(93, 40);
+            this.btn_modbustcpwrite.TabIndex = 7;
+            this.btn_modbustcpwrite.Text = "写入";
+            this.btn_modbustcpwrite.UseVisualStyleBackColor = true;
+            this.btn_modbustcpwrite.Click += new System.EventHandler(this.btn_modbustcpsend_Click);
+            // 
+            // txt_modbustcpread
+            // 
+            this.txt_modbustcpread.Location = new System.Drawing.Point(6, 390);
+            this.txt_modbustcpread.Name = "txt_modbustcpread";
+            this.txt_modbustcpread.Size = new System.Drawing.Size(378, 34);
+            this.txt_modbustcpread.TabIndex = 9;
+            this.txt_modbustcpread.Text = "";
             // 
             // btn_modbustcpoff
             // 
@@ -597,6 +633,42 @@
             this.label6.Text = "目标地址";
             this.label6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(6, 335);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(102, 23);
+            this.label15.TabIndex = 3;
+            this.label15.Text = "读写位数";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(171, 284);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(102, 23);
+            this.label14.TabIndex = 3;
+            this.label14.Text = "起始地址";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(6, 471);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(56, 23);
+            this.label17.TabIndex = 3;
+            this.label17.Text = "写入";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(6, 284);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(102, 23);
+            this.label13.TabIndex = 3;
+            this.label13.Text = "从站编号";
+            // 
             // label12
             // 
             this.label12.AutoSize = true;
@@ -605,6 +677,15 @@
             this.label12.Size = new System.Drawing.Size(102, 23);
             this.label12.TabIndex = 3;
             this.label12.Text = "功能选择";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(6, 364);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(56, 23);
+            this.label16.TabIndex = 3;
+            this.label16.Text = "读取";
             // 
             // label9
             // 
@@ -625,12 +706,33 @@
             this.btn_modbustcpon.UseVisualStyleBackColor = true;
             this.btn_modbustcpon.Click += new System.EventHandler(this.btn_modbustcpon_Click);
             // 
+            // txt_number
+            // 
+            this.txt_number.Location = new System.Drawing.Point(110, 332);
+            this.txt_number.Name = "txt_number";
+            this.txt_number.Size = new System.Drawing.Size(51, 34);
+            this.txt_number.TabIndex = 4;
+            // 
             // txt_modbusip
             // 
             this.txt_modbusip.Location = new System.Drawing.Point(141, 25);
             this.txt_modbusip.Name = "txt_modbusip";
             this.txt_modbusip.Size = new System.Drawing.Size(227, 34);
             this.txt_modbusip.TabIndex = 4;
+            // 
+            // txt_startaddress
+            // 
+            this.txt_startaddress.Location = new System.Drawing.Point(275, 281);
+            this.txt_startaddress.Name = "txt_startaddress";
+            this.txt_startaddress.Size = new System.Drawing.Size(51, 34);
+            this.txt_startaddress.TabIndex = 4;
+            // 
+            // txt_slaveid
+            // 
+            this.txt_slaveid.Location = new System.Drawing.Point(110, 281);
+            this.txt_slaveid.Name = "txt_slaveid";
+            this.txt_slaveid.Size = new System.Drawing.Size(51, 34);
+            this.txt_slaveid.TabIndex = 4;
             // 
             // txt_modbusport
             // 
@@ -671,108 +773,6 @@
             this.imageList1.Images.SetKeyName(0, "相机.png");
             this.imageList1.Images.SetKeyName(1, "菜单.png");
             this.imageList1.Images.SetKeyName(2, "asset-monitor_line.png");
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(6, 284);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(102, 23);
-            this.label13.TabIndex = 3;
-            this.label13.Text = "从站编号";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(171, 284);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(102, 23);
-            this.label14.TabIndex = 3;
-            this.label14.Text = "起始地址";
-            // 
-            // txt_startaddress
-            // 
-            this.txt_startaddress.Location = new System.Drawing.Point(275, 281);
-            this.txt_startaddress.Name = "txt_startaddress";
-            this.txt_startaddress.Size = new System.Drawing.Size(51, 34);
-            this.txt_startaddress.TabIndex = 4;
-            // 
-            // txt_number
-            // 
-            this.txt_number.Location = new System.Drawing.Point(110, 332);
-            this.txt_number.Name = "txt_number";
-            this.txt_number.Size = new System.Drawing.Size(51, 34);
-            this.txt_number.TabIndex = 4;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(6, 335);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(102, 23);
-            this.label15.TabIndex = 3;
-            this.label15.Text = "读写位数";
-            // 
-            // txt_slaveid
-            // 
-            this.txt_slaveid.Location = new System.Drawing.Point(110, 281);
-            this.txt_slaveid.Name = "txt_slaveid";
-            this.txt_slaveid.Size = new System.Drawing.Size(51, 34);
-            this.txt_slaveid.TabIndex = 4;
-            // 
-            // txt_modbustcpread
-            // 
-            this.txt_modbustcpread.Location = new System.Drawing.Point(6, 390);
-            this.txt_modbustcpread.Name = "txt_modbustcpread";
-            this.txt_modbustcpread.Size = new System.Drawing.Size(378, 34);
-            this.txt_modbustcpread.TabIndex = 9;
-            this.txt_modbustcpread.Text = "";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(6, 364);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(56, 23);
-            this.label16.TabIndex = 3;
-            this.label16.Text = "接收";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(6, 471);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(56, 23);
-            this.label17.TabIndex = 3;
-            this.label17.Text = "发送";
-            // 
-            // txt_modbustcpsend
-            // 
-            this.txt_modbustcpsend.Location = new System.Drawing.Point(6, 497);
-            this.txt_modbustcpsend.Name = "txt_modbustcpsend";
-            this.txt_modbustcpsend.Size = new System.Drawing.Size(378, 34);
-            this.txt_modbustcpsend.TabIndex = 9;
-            this.txt_modbustcpsend.Text = "";
-            // 
-            // btn_modbustcpsend
-            // 
-            this.btn_modbustcpsend.Location = new System.Drawing.Point(6, 537);
-            this.btn_modbustcpsend.Name = "btn_modbustcpsend";
-            this.btn_modbustcpsend.Size = new System.Drawing.Size(93, 40);
-            this.btn_modbustcpsend.TabIndex = 7;
-            this.btn_modbustcpsend.Text = "发送";
-            this.btn_modbustcpsend.UseVisualStyleBackColor = true;
-            this.btn_modbustcpsend.Click += new System.EventHandler(this.btn_modbustcpsend_Click);
-            // 
-            // btn_modbustcpread
-            // 
-            this.btn_modbustcpread.Location = new System.Drawing.Point(6, 428);
-            this.btn_modbustcpread.Name = "btn_modbustcpread";
-            this.btn_modbustcpread.Size = new System.Drawing.Size(93, 40);
-            this.btn_modbustcpread.TabIndex = 7;
-            this.btn_modbustcpread.Text = "读取";
-            this.btn_modbustcpread.UseVisualStyleBackColor = true;
-            this.btn_modbustcpread.Click += new System.EventHandler(this.bt_sendcus_Click);
             // 
             // Form1
             // 
@@ -863,8 +863,8 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.TextBox txt_number;
         private System.Windows.Forms.TextBox txt_slaveid;
-        private System.Windows.Forms.RichTextBox txt_modbustcpsend;
-        private System.Windows.Forms.Button btn_modbustcpsend;
+        private System.Windows.Forms.RichTextBox txt_modbustcpwrite;
+        private System.Windows.Forms.Button btn_modbustcpwrite;
         private System.Windows.Forms.RichTextBox txt_modbustcpread;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label16;
