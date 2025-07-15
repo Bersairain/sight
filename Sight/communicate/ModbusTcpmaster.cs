@@ -23,8 +23,10 @@ namespace Sight.communicate
         private string _lastIp, _lastPort;
         // 添加连接状态属性
         public bool IsConnected => socketcus?.Connected ?? false;
+        //添加断连机制
+        public bool btn_disconnectpush;
         // 添加心跳定时器
-        private System.Threading.Timer keepAliveTimer;
+        //private System.Threading.Timer keepAliveTimer;
 
         //Socket显示用
         public event Action<string> OnDataReceived;
@@ -163,10 +165,10 @@ namespace Sight.communicate
         {
             try
             {
-                // 验证连接状态
+                //验证连接状态
                 if (!ValidateConnection())
                 {
-                    OnStatusChanged?.Invoke("连接已断开，尝试重连...");
+                    OnStatusChanged?.Invoke("连接已断开，尝试 重连...");
                     if (!Reconnect())
                         throw new Exception("重连失败");
                 }
@@ -335,5 +337,22 @@ namespace Sight.communicate
             }
         }
         #endregion
+        public bool PingTest(string ip)
+        {
+            try
+            {
+                using (var ping = new System.Net.NetworkInformation.Ping())
+                {
+                    var reply = ping.Send(ip, 1000); // 3秒超时
+                    return reply.Status == System.Net.NetworkInformation.IPStatus.Success;
+                }
+            }
+            catch
+            {
+                MessageBox.Show("连接断开");
+                return false;
+                
+            }
+        }
     }
 }

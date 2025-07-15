@@ -22,6 +22,8 @@ namespace Sight.communicate
         bool openport(string st1,string st2);
         void closeport();
 
+        //ping(测试用)
+        //bool PingTest(string ip);
         // 添加连接状态属性
         bool IsConnected { get; }
         /// <summary>

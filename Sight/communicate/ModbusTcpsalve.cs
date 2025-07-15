@@ -127,6 +127,11 @@ namespace Sight.communicate
             }
         }
 
+        //public bool PingTest(string ip)
+        //{
+        //    throw new NotImplementedException();
+        //}
+
         public bool[] ReadCoils(byte slaveAddress, ushort startAddress, ushort numberOfPoints)
         {
             throw new NotImplementedException();

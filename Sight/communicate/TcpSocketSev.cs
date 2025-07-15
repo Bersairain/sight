@@ -280,5 +280,10 @@ namespace Sight.communicate
         {
             throw new NotImplementedException();
         }
+
+        //public bool PingTest(string ip)
+        //{
+        //    throw new NotImplementedException();
+        //}
     }
 }
