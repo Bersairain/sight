@@ -3,24 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Administrator\\source\\repos\\Sight\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8AE16EEB-0182-4043-B119-4143B24429B2}|Sight\\Sight.csproj|C:\\Users\\Administrator\\source\\repos\\Sight\\sight\\communicate\\modbustcpmaster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8AE16EEB-0182-4043-B119-4143B24429B2}|Sight\\Sight.csproj|solutionrelative:sight\\communicate\\modbustcpmaster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8AE16EEB-0182-4043-B119-4143B24429B2}|Sight\\Sight.csproj|c:\\users\\administrator\\source\\repos\\sight\\sight\\communicate\\icommun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8AE16EEB-0182-4043-B119-4143B24429B2}|Sight\\Sight.csproj|solutionrelative:sight\\communicate\\icommun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8AE16EEB-0182-4043-B119-4143B24429B2}|Sight\\Sight.csproj|C:\\Users\\Administrator\\source\\repos\\Sight\\sight\\communicate\\fcommunicate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8AE16EEB-0182-4043-B119-4143B24429B2}|Sight\\Sight.csproj|solutionrelative:sight\\communicate\\fcommunicate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8AE16EEB-0182-4043-B119-4143B24429B2}|Sight\\Sight.csproj|C:\\Users\\Administrator\\source\\repos\\Sight\\sight\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8AE16EEB-0182-4043-B119-4143B24429B2}|Sight\\Sight.csproj|solutionrelative:sight\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8AE16EEB-0182-4043-B119-4143B24429B2}|Sight\\Sight.csproj|C:\\Users\\Administrator\\source\\repos\\Sight\\sight\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8AE16EEB-0182-4043-B119-4143B24429B2}|Sight\\Sight.csproj|solutionrelative:sight\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8AE16EEB-0182-4043-B119-4143B24429B2}|Sight\\Sight.csproj|c:\\users\\administrator\\source\\repos\\sight\\sight\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8AE16EEB-0182-4043-B119-4143B24429B2}|Sight\\Sight.csproj|solutionrelative:sight\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8AE16EEB-0182-4043-B119-4143B24429B2}|Sight\\Sight.csproj|C:\\Users\\Administrator\\source\\repos\\Sight\\sight\\communicate\\modbustcpsalve.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -31,12 +19,60 @@
       "RelativeMoniker": "D:0:0:{8AE16EEB-0182-4043-B119-4143B24429B2}|Sight\\Sight.csproj|solutionrelative:sight\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{8AE16EEB-0182-4043-B119-4143B24429B2}|Sight\\Sight.csproj|C:\\Users\\Administrator\\source\\repos\\Sight\\sight\\camera\\hik.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8AE16EEB-0182-4043-B119-4143B24429B2}|Sight\\Sight.csproj|solutionrelative:sight\\camera\\hik.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8AE16EEB-0182-4043-B119-4143B24429B2}|Sight\\Sight.csproj|C:\\Users\\Administrator\\source\\repos\\Sight\\sight\\camera\\icamera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8AE16EEB-0182-4043-B119-4143B24429B2}|Sight\\Sight.csproj|solutionrelative:sight\\camera\\icamera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8AE16EEB-0182-4043-B119-4143B24429B2}|Sight\\Sight.csproj|c:\\users\\administrator\\source\\repos\\sight\\sight\\command\\keymatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8AE16EEB-0182-4043-B119-4143B24429B2}|Sight\\Sight.csproj|solutionrelative:sight\\command\\keymatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8AE16EEB-0182-4043-B119-4143B24429B2}|Sight\\Sight.csproj|c:\\users\\administrator\\source\\repos\\sight\\sight\\command\\icommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8AE16EEB-0182-4043-B119-4143B24429B2}|Sight\\Sight.csproj|solutionrelative:sight\\command\\icommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8AE16EEB-0182-4043-B119-4143B24429B2}|Sight\\Sight.csproj|C:\\Users\\Administrator\\source\\repos\\Sight\\sight\\communicate\\icommun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8AE16EEB-0182-4043-B119-4143B24429B2}|Sight\\Sight.csproj|solutionrelative:sight\\communicate\\icommun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8AE16EEB-0182-4043-B119-4143B24429B2}|Sight\\Sight.csproj|C:\\Users\\Administrator\\source\\repos\\Sight\\sight\\communicate\\fcommunicate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8AE16EEB-0182-4043-B119-4143B24429B2}|Sight\\Sight.csproj|solutionrelative:sight\\communicate\\fcommunicate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8AE16EEB-0182-4043-B119-4143B24429B2}|Sight\\Sight.csproj|C:\\Users\\Administrator\\source\\repos\\Sight\\sight\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8AE16EEB-0182-4043-B119-4143B24429B2}|Sight\\Sight.csproj|solutionrelative:sight\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{8AE16EEB-0182-4043-B119-4143B24429B2}|Sight\\Sight.csproj|c:\\users\\administrator\\source\\repos\\sight\\sight\\communicate\\tcpsocketsev.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8AE16EEB-0182-4043-B119-4143B24429B2}|Sight\\Sight.csproj|solutionrelative:sight\\communicate\\tcpsocketsev.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8AE16EEB-0182-4043-B119-4143B24429B2}|Sight\\Sight.csproj|c:\\users\\administrator\\source\\repos\\sight\\sight\\communicate\\tcpsocketcus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8AE16EEB-0182-4043-B119-4143B24429B2}|Sight\\Sight.csproj|solutionrelative:sight\\communicate\\tcpsocketcus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8AE16EEB-0182-4043-B119-4143B24429B2}|Sight\\Sight.csproj|C:\\Users\\Administrator\\source\\repos\\Sight\\sight\\xml\\dataconvet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8AE16EEB-0182-4043-B119-4143B24429B2}|Sight\\Sight.csproj|solutionrelative:sight\\xml\\dataconvet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9BAA53FD-89B5-43E2-AC59-A27B006DEBB6}|halcon\u63A7\u4EF6\\HWindow_Tool.csproj|C:\\Users\\Administrator\\source\\repos\\Sight\\halcon\u63A7\u4EF6\\hwindow_final.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{9BAA53FD-89B5-43E2-AC59-A27B006DEBB6}|halcon\u63A7\u4EF6\\HWindow_Tool.csproj|solutionrelative:halcon\u63A7\u4EF6\\hwindow_final.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8AE16EEB-0182-4043-B119-4143B24429B2}|Sight\\Sight.csproj|c:\\users\\administrator\\source\\repos\\sight\\sight\\command\\fcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8AE16EEB-0182-4043-B119-4143B24429B2}|Sight\\Sight.csproj|solutionrelative:sight\\command\\fcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8AE16EEB-0182-4043-B119-4143B24429B2}|Sight\\Sight.csproj|C:\\Users\\Administrator\\source\\repos\\Sight\\sight\\communicate\\modbustcpmaster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8AE16EEB-0182-4043-B119-4143B24429B2}|Sight\\Sight.csproj|solutionrelative:sight\\communicate\\modbustcpmaster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8AE16EEB-0182-4043-B119-4143B24429B2}|Sight\\Sight.csproj|C:\\Users\\Administrator\\source\\repos\\Sight\\sight\\camera\\cameraserve.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8AE16EEB-0182-4043-B119-4143B24429B2}|Sight\\Sight.csproj|solutionrelative:sight\\camera\\cameraserve.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,115 +82,239 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "TcpSocketSev.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\Sight\\Sight\\communicate\\TcpSocketSev.cs",
+              "RelativeDocumentMoniker": "Sight\\communicate\\TcpSocketSev.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\Sight\\Sight\\communicate\\TcpSocketSev.cs",
+              "RelativeToolTip": "Sight\\communicate\\TcpSocketSev.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAcwCQAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-28T04:42:40.344Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "TcpSocketCus.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\Sight\\Sight\\communicate\\TcpSocketCus.cs",
+              "RelativeDocumentMoniker": "Sight\\communicate\\TcpSocketCus.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\Sight\\Sight\\communicate\\TcpSocketCus.cs",
+              "RelativeToolTip": "Sight\\communicate\\TcpSocketCus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-28T04:42:39.722Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "KeyMatch.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\Sight\\Sight\\command\\KeyMatch.cs",
+              "RelativeDocumentMoniker": "Sight\\command\\KeyMatch.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\Sight\\Sight\\command\\KeyMatch.cs",
+              "RelativeToolTip": "Sight\\command\\KeyMatch.cs",
+              "ViewState": "AgIAAIgAAAAAAAAAAAAswIgAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-28T00:32:17.054Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Icommand.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\Sight\\Sight\\command\\Icommand.cs",
+              "RelativeDocumentMoniker": "Sight\\command\\Icommand.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\Sight\\Sight\\command\\Icommand.cs",
+              "RelativeToolTip": "Sight\\command\\Icommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-28T00:16:19.613Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Fcommand.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\Sight\\Sight\\command\\Fcommand.cs",
+              "RelativeDocumentMoniker": "Sight\\command\\Fcommand.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\Sight\\Sight\\command\\Fcommand.cs",
+              "RelativeToolTip": "Sight\\command\\Fcommand.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABMAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-28T00:14:55.17Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "ICamera.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\Sight\\Sight\\camera\\ICamera.cs",
+              "RelativeDocumentMoniker": "Sight\\camera\\ICamera.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\Sight\\Sight\\camera\\ICamera.cs",
+              "RelativeToolTip": "Sight\\camera\\ICamera.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T05:30:28.544Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Hik.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\Sight\\Sight\\camera\\Hik.cs",
+              "RelativeDocumentMoniker": "Sight\\camera\\Hik.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\Sight\\Sight\\camera\\Hik.cs",
+              "RelativeToolTip": "Sight\\camera\\Hik.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T05:30:19.652Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "cameraserve.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\Sight\\Sight\\camera\\cameraserve.cs",
+              "RelativeDocumentMoniker": "Sight\\camera\\cameraserve.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\Sight\\Sight\\camera\\cameraserve.cs",
+              "RelativeToolTip": "Sight\\camera\\cameraserve.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T05:30:15.095Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "dataconvet.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\Sight\\Sight\\xml\\dataconvet.cs",
+              "RelativeDocumentMoniker": "Sight\\xml\\dataconvet.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\Sight\\Sight\\xml\\dataconvet.cs",
+              "RelativeToolTip": "Sight\\xml\\dataconvet.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T01:32:28.367Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "ModbusTcpsalve.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\Sight\\Sight\\communicate\\ModbusTcpsalve.cs",
               "RelativeDocumentMoniker": "Sight\\communicate\\ModbusTcpsalve.cs",
               "ToolTip": "C:\\Users\\Administrator\\source\\repos\\Sight\\Sight\\communicate\\ModbusTcpsalve.cs",
               "RelativeToolTip": "Sight\\communicate\\ModbusTcpsalve.cs",
-              "ViewState": "AgIAAHQAAAAAAAAAAAAgwE8AAAARAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAFMAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-11T01:14:51.249Z"
+              "WhenOpened": "2025-07-11T01:14:51.249Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\Sight\\Sight\\Program.cs",
+              "RelativeDocumentMoniker": "Sight\\Program.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\Sight\\Sight\\Program.cs",
+              "RelativeToolTip": "Sight\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T01:11:51.374Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\Sight\\Sight\\Form1.cs",
+              "RelativeDocumentMoniker": "Sight\\Form1.cs",
+              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\Sight\\Sight\\Form1.cs",
+              "RelativeToolTip": "Sight\\Form1.cs",
+              "ViewState": "AgIAAO0AAAAAAAAAAAAUwPkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-03T02:42:38.346Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "ModbusTcpmaster.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\Sight\\Sight\\communicate\\ModbusTcpmaster.cs",
               "RelativeDocumentMoniker": "Sight\\communicate\\ModbusTcpmaster.cs",
               "ToolTip": "C:\\Users\\Administrator\\source\\repos\\Sight\\Sight\\communicate\\ModbusTcpmaster.cs",
               "RelativeToolTip": "Sight\\communicate\\ModbusTcpmaster.cs",
-              "ViewState": "AgIAADgAAAAAAAAAAADwv3EAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAEwBAAAAAAAAAADwv6cAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-10T02:22:47.008Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\Sight\\Sight\\Form1.cs",
-              "RelativeDocumentMoniker": "Sight\\Form1.cs",
-              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\Sight\\Sight\\Form1.cs",
-              "RelativeToolTip": "Sight\\Form1.cs",
-              "ViewState": "AgIAACsBAAAAAAAAAAAIwDkBAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-03T02:42:38.346Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Form1.cs [\u8BBE\u8BA1]",
               "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\Sight\\Sight\\Form1.cs",
               "RelativeDocumentMoniker": "Sight\\Form1.cs",
               "ToolTip": "C:\\Users\\Administrator\\source\\repos\\Sight\\Sight\\Form1.cs [\u8BBE\u8BA1]",
               "RelativeToolTip": "Sight\\Form1.cs [\u8BBE\u8BA1]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-25T03:03:31.334Z"
+              "WhenOpened": "2025-06-25T03:03:31.334Z",
+              "EditorCaption": " [\u8BBE\u8BA1]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 8,
               "Title": "Icommun.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\Sight\\Sight\\communicate\\Icommun.cs",
               "RelativeDocumentMoniker": "Sight\\communicate\\Icommun.cs",
               "ToolTip": "C:\\Users\\Administrator\\source\\repos\\Sight\\Sight\\communicate\\Icommun.cs",
               "RelativeToolTip": "Sight\\communicate\\Icommun.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAuwBkAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-07T05:39:43.922Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 9,
               "Title": "FCommunicate.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\Sight\\Sight\\communicate\\FCommunicate.cs",
               "RelativeDocumentMoniker": "Sight\\communicate\\FCommunicate.cs",
               "ToolTip": "C:\\Users\\Administrator\\source\\repos\\Sight\\Sight\\communicate\\FCommunicate.cs",
               "RelativeToolTip": "Sight\\communicate\\FCommunicate.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAACIAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAsAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-07T02:53:50.334Z"
+              "WhenOpened": "2025-07-07T02:53:50.334Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "Form1.Designer.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\Sight\\Sight\\Form1.Designer.cs",
               "RelativeDocumentMoniker": "Sight\\Form1.Designer.cs",
               "ToolTip": "C:\\Users\\Administrator\\source\\repos\\Sight\\Sight\\Form1.Designer.cs",
               "RelativeToolTip": "Sight\\Form1.Designer.cs",
-              "ViewState": "AgIAAIECAAAAAAAAAAD4v48CAAA/AAAAAAAAAA==",
+              "ViewState": "AgIAAGsEAAAAAAAAAAAQwHoEAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-25T06:37:51.657Z"
+              "WhenOpened": "2025-06-25T06:37:51.657Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\Sight\\Sight\\Program.cs",
-              "RelativeDocumentMoniker": "Sight\\Program.cs",
-              "ToolTip": "C:\\Users\\Administrator\\source\\repos\\Sight\\Sight\\Program.cs",
-              "RelativeToolTip": "Sight\\Program.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAqwBIAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-26T01:11:51.374Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 14,
               "Title": "HWindow_Final.cs [\u8BBE\u8BA1]",
               "DocumentMoniker": "C:\\Users\\Administrator\\source\\repos\\Sight\\halcon\u63A7\u4EF6\\HWindow_Final.cs",
               "RelativeDocumentMoniker": "halcon\u63A7\u4EF6\\HWindow_Final.cs",
               "ToolTip": "C:\\Users\\Administrator\\source\\repos\\Sight\\halcon\u63A7\u4EF6\\HWindow_Final.cs [\u8BBE\u8BA1]",
               "RelativeToolTip": "halcon\u63A7\u4EF6\\HWindow_Final.cs [\u8BBE\u8BA1]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-03T02:45:35.127Z"
+              "WhenOpened": "2025-07-03T02:45:35.127Z",
+              "EditorCaption": " [\u8BBE\u8BA1]"
             }
           ]
         }

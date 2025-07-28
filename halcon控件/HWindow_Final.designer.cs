@@ -39,9 +39,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HWindow_Final));
             this.m_CtrlHStatusLabelCtrl = new System.Windows.Forms.Label();
-            this.m_CtrlImageList = new System.Windows.Forms.ImageList();
+            this.m_CtrlImageList = new System.Windows.Forms.ImageList(this.components);
             this.mCtrl_HWindow = new HalconDotNet.HWindowControl();
             this.SuspendLayout();
             // 

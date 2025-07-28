@@ -75,11 +75,13 @@
             this.btn_modbustcpwrite = new System.Windows.Forms.Button();
             this.txt_modbustcpread = new System.Windows.Forms.RichTextBox();
             this.btn_modbustcpoff = new System.Windows.Forms.Button();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
@@ -92,6 +94,20 @@
             this.txt_modbusport = new System.Windows.Forms.TextBox();
             this.communcombo = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.hWindow_Final_command = new HalconControl.HWindow_Final();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.load = new ReaLTaiizor.Controls.Button();
+            this.grab = new ReaLTaiizor.Controls.Button();
+            this.command_keymatch = new ReaLTaiizor.Controls.Button();
+            this.compair_sharp = new ReaLTaiizor.Controls.Button();
+            this.Blob = new ReaLTaiizor.Controls.Button();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.materialTabControl1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -102,6 +118,10 @@
             this.tcommun.SuspendLayout();
             this.groupBox6.SuspendLayout();
             this.groupBox5.SuspendLayout();
+            this.tabPage3.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
+            this.groupBox8.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // materialTabControl1
@@ -109,6 +129,7 @@
             this.materialTabControl1.Controls.Add(this.tabPage1);
             this.materialTabControl1.Controls.Add(this.tabPage2);
             this.materialTabControl1.Controls.Add(this.tcommun);
+            this.materialTabControl1.Controls.Add(this.tabPage3);
             this.materialTabControl1.Depth = 0;
             this.materialTabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.materialTabControl1.ImageList = this.imageList1;
@@ -536,11 +557,13 @@
             this.groupBox5.Controls.Add(this.btn_modbustcpwrite);
             this.groupBox5.Controls.Add(this.txt_modbustcpread);
             this.groupBox5.Controls.Add(this.btn_modbustcpoff);
+            this.groupBox5.Controls.Add(this.comboBox2);
             this.groupBox5.Controls.Add(this.comboBox1);
             this.groupBox5.Controls.Add(this.label6);
             this.groupBox5.Controls.Add(this.label15);
             this.groupBox5.Controls.Add(this.label14);
             this.groupBox5.Controls.Add(this.label17);
+            this.groupBox5.Controls.Add(this.label18);
             this.groupBox5.Controls.Add(this.label13);
             this.groupBox5.Controls.Add(this.label12);
             this.groupBox5.Controls.Add(this.label16);
@@ -554,14 +577,14 @@
             this.groupBox5.Font = new System.Drawing.Font("宋体", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.groupBox5.Location = new System.Drawing.Point(6, 79);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(390, 583);
+            this.groupBox5.Size = new System.Drawing.Size(390, 706);
             this.groupBox5.TabIndex = 3;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "ModbusTcp通讯";
             // 
             // txt_modbustcpwrite
             // 
-            this.txt_modbustcpwrite.Location = new System.Drawing.Point(6, 497);
+            this.txt_modbustcpwrite.Location = new System.Drawing.Point(6, 619);
             this.txt_modbustcpwrite.Name = "txt_modbustcpwrite";
             this.txt_modbustcpwrite.Size = new System.Drawing.Size(378, 34);
             this.txt_modbustcpwrite.TabIndex = 9;
@@ -569,7 +592,7 @@
             // 
             // btn_modbustcpread
             // 
-            this.btn_modbustcpread.Location = new System.Drawing.Point(6, 428);
+            this.btn_modbustcpread.Location = new System.Drawing.Point(6, 550);
             this.btn_modbustcpread.Name = "btn_modbustcpread";
             this.btn_modbustcpread.Size = new System.Drawing.Size(93, 40);
             this.btn_modbustcpread.TabIndex = 7;
@@ -579,7 +602,7 @@
             // 
             // btn_modbustcpwrite
             // 
-            this.btn_modbustcpwrite.Location = new System.Drawing.Point(6, 537);
+            this.btn_modbustcpwrite.Location = new System.Drawing.Point(6, 659);
             this.btn_modbustcpwrite.Name = "btn_modbustcpwrite";
             this.btn_modbustcpwrite.Size = new System.Drawing.Size(93, 40);
             this.btn_modbustcpwrite.TabIndex = 7;
@@ -589,7 +612,7 @@
             // 
             // txt_modbustcpread
             // 
-            this.txt_modbustcpread.Location = new System.Drawing.Point(6, 390);
+            this.txt_modbustcpread.Location = new System.Drawing.Point(6, 512);
             this.txt_modbustcpread.Name = "txt_modbustcpread";
             this.txt_modbustcpread.Size = new System.Drawing.Size(378, 34);
             this.txt_modbustcpread.TabIndex = 9;
@@ -605,6 +628,23 @@
             this.btn_modbustcpoff.Text = "断开";
             this.btn_modbustcpoff.UseVisualStyleBackColor = false;
             this.btn_modbustcpoff.Click += new System.EventHandler(this.btn_modbustcpoff_Click);
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "读取线圈",
+            "读取离散输入",
+            "读取保持寄存器",
+            "读取输入寄存器",
+            "写单个线圈",
+            "写多个线圈",
+            "写单个寄存器",
+            "写多个寄存器"});
+            this.comboBox2.Location = new System.Drawing.Point(141, 403);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(227, 31);
+            this.comboBox2.TabIndex = 5;
             // 
             // comboBox1
             // 
@@ -654,11 +694,20 @@
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(6, 471);
+            this.label17.Location = new System.Drawing.Point(6, 593);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(56, 23);
             this.label17.TabIndex = 3;
             this.label17.Text = "写入";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(23, 406);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(102, 23);
+            this.label18.TabIndex = 3;
+            this.label18.Text = "数据类型";
             // 
             // label13
             // 
@@ -681,7 +730,7 @@
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(6, 364);
+            this.label16.Location = new System.Drawing.Point(6, 486);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(56, 23);
             this.label16.TabIndex = 3;
@@ -767,6 +816,223 @@
             this.label5.Text = "通讯模式";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // tabPage3
+            // 
+            this.tabPage3.Controls.Add(this.tableLayoutPanel1);
+            this.tabPage3.Location = new System.Drawing.Point(4, 31);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(1269, 858);
+            this.tabPage3.TabIndex = 3;
+            this.tabPage3.Text = "算法处理";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 3;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel1.Controls.Add(this.groupBox9, 2, 1);
+            this.tableLayoutPanel1.Controls.Add(this.groupBox8, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.hWindow_Final_command, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.groupBox7, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 0);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 2;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1263, 852);
+            this.tableLayoutPanel1.TabIndex = 0;
+            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
+            // 
+            // groupBox9
+            // 
+            this.groupBox9.Location = new System.Drawing.Point(1076, 769);
+            this.groupBox9.Name = "groupBox9";
+            this.groupBox9.Size = new System.Drawing.Size(183, 80);
+            this.groupBox9.TabIndex = 6;
+            this.groupBox9.TabStop = false;
+            this.groupBox9.Text = "groupBox9";
+            // 
+            // groupBox8
+            // 
+            this.groupBox8.Controls.Add(this.button2);
+            this.groupBox8.Controls.Add(this.button1);
+            this.groupBox8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox8.Location = new System.Drawing.Point(192, 769);
+            this.groupBox8.Name = "groupBox8";
+            this.groupBox8.Size = new System.Drawing.Size(878, 80);
+            this.groupBox8.TabIndex = 5;
+            this.groupBox8.TabStop = false;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(300, 24);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(108, 50);
+            this.button2.TabIndex = 0;
+            this.button2.Text = "取消";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(84, 24);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(108, 50);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "确认";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // hWindow_Final_command
+            // 
+            this.hWindow_Final_command.BackColor = System.Drawing.Color.Transparent;
+            this.hWindow_Final_command.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.hWindow_Final_command.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.hWindow_Final_command.DrawModel = false;
+            this.hWindow_Final_command.Image = null;
+            this.hWindow_Final_command.Location = new System.Drawing.Point(193, 4);
+            this.hWindow_Final_command.Margin = new System.Windows.Forms.Padding(4);
+            this.hWindow_Final_command.Name = "hWindow_Final_command";
+            this.hWindow_Final_command.Size = new System.Drawing.Size(876, 758);
+            this.hWindow_Final_command.TabIndex = 1;
+            // 
+            // groupBox7
+            // 
+            this.groupBox7.Location = new System.Drawing.Point(3, 769);
+            this.groupBox7.Name = "groupBox7";
+            this.groupBox7.Size = new System.Drawing.Size(183, 80);
+            this.groupBox7.TabIndex = 4;
+            this.groupBox7.TabStop = false;
+            this.groupBox7.Text = "groupBox7";
+            // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.ColumnCount = 1;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel2.Controls.Add(this.load, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.grab, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.command_keymatch, 0, 4);
+            this.tableLayoutPanel2.Controls.Add(this.compair_sharp, 0, 3);
+            this.tableLayoutPanel2.Controls.Add(this.Blob, 0, 2);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 5;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(183, 323);
+            this.tableLayoutPanel2.TabIndex = 7;
+            // 
+            // load
+            // 
+            this.load.BackColor = System.Drawing.Color.Transparent;
+            this.load.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.load.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.load.EnteredBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.load.EnteredColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.load.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.load.Image = null;
+            this.load.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.load.InactiveColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.load.Location = new System.Drawing.Point(3, 67);
+            this.load.Name = "load";
+            this.load.PressedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.load.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.load.Size = new System.Drawing.Size(177, 58);
+            this.load.TabIndex = 4;
+            this.load.Text = "读取";
+            this.load.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.load.Click += new System.EventHandler(this.load_Click);
+            // 
+            // grab
+            // 
+            this.grab.BackColor = System.Drawing.Color.Transparent;
+            this.grab.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.grab.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.grab.EnteredBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.grab.EnteredColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.grab.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.grab.Image = null;
+            this.grab.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.grab.InactiveColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.grab.Location = new System.Drawing.Point(3, 3);
+            this.grab.Name = "grab";
+            this.grab.PressedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.grab.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.grab.Size = new System.Drawing.Size(177, 58);
+            this.grab.TabIndex = 3;
+            this.grab.Text = "拍照";
+            this.grab.TextAlignment = System.Drawing.StringAlignment.Center;
+            // 
+            // command_keymatch
+            // 
+            this.command_keymatch.BackColor = System.Drawing.Color.Transparent;
+            this.command_keymatch.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.command_keymatch.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.command_keymatch.EnteredBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.command_keymatch.EnteredColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.command_keymatch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.command_keymatch.Image = null;
+            this.command_keymatch.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.command_keymatch.InactiveColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.command_keymatch.Location = new System.Drawing.Point(3, 259);
+            this.command_keymatch.Name = "command_keymatch";
+            this.command_keymatch.PressedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.command_keymatch.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.command_keymatch.Size = new System.Drawing.Size(177, 61);
+            this.command_keymatch.TabIndex = 2;
+            this.command_keymatch.Text = "模板匹配(形状)";
+            this.command_keymatch.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.command_keymatch.Click += new System.EventHandler(this.command_keymatch_Click);
+            // 
+            // compair_sharp
+            // 
+            this.compair_sharp.BackColor = System.Drawing.Color.Transparent;
+            this.compair_sharp.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.compair_sharp.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.compair_sharp.EnteredBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.compair_sharp.EnteredColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.compair_sharp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.compair_sharp.Image = null;
+            this.compair_sharp.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.compair_sharp.InactiveColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.compair_sharp.Location = new System.Drawing.Point(3, 195);
+            this.compair_sharp.Name = "compair_sharp";
+            this.compair_sharp.PressedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.compair_sharp.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.compair_sharp.Size = new System.Drawing.Size(177, 58);
+            this.compair_sharp.TabIndex = 1;
+            this.compair_sharp.Text = "创建模板";
+            this.compair_sharp.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.compair_sharp.Click += new System.EventHandler(this.compair_sharp_Click);
+            // 
+            // Blob
+            // 
+            this.Blob.BackColor = System.Drawing.Color.Transparent;
+            this.Blob.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.Blob.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Blob.EnteredBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.Blob.EnteredColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.Blob.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.Blob.Image = null;
+            this.Blob.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Blob.InactiveColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.Blob.Location = new System.Drawing.Point(3, 131);
+            this.Blob.Name = "Blob";
+            this.Blob.PressedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.Blob.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.Blob.Size = new System.Drawing.Size(177, 58);
+            this.Blob.TabIndex = 0;
+            this.Blob.Text = " Blob分析";
+            this.Blob.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.Blob.Click += new System.EventHandler(this.Blob_Click);
+            // 
             // imageList1
             // 
             this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
@@ -801,6 +1067,10 @@
             this.groupBox6.PerformLayout();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
+            this.tabPage3.ResumeLayout(false);
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.groupBox8.ResumeLayout(false);
+            this.tableLayoutPanel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -870,6 +1140,22 @@
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Button btn_modbustcpread;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private HalconControl.HWindow_Final hWindow_Final_command;
+        private System.Windows.Forms.GroupBox groupBox9;
+        private System.Windows.Forms.GroupBox groupBox8;
+        private System.Windows.Forms.GroupBox groupBox7;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private ReaLTaiizor.Controls.Button Blob;
+        private ReaLTaiizor.Controls.Button compair_sharp;
+        private ReaLTaiizor.Controls.Button command_keymatch;
+        private ReaLTaiizor.Controls.Button load;
+        private ReaLTaiizor.Controls.Button grab;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
     }
 }
 

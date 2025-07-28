@@ -3,6 +3,7 @@ using HalconDotNet;
 using Microsoft.VisualBasic.Logging;
 using MvCamCtrl.NET;
 using ReaLTaiizor.Forms;
+using Sight.command;
 using Sight.communicate;
 using System;
 using System.Collections.Generic;
@@ -15,10 +16,13 @@ using System.Drawing.Imaging;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices;
+using System.Runtime.InteropServices.ComTypes;
 using System.Text;
 using System.Threading;
 using System.Windows.Forms;
 using System.Windows.Input;
+using ViewWindow.Model;
+using ViewWindow.SupportROIModel;
 
 namespace Sight
 {
@@ -27,7 +31,17 @@ namespace Sight
         //相机名称
         String camerakind = null;
         bool grablock = true;
+        // 搜索绘制区域
+        List<ViewWindow.Model.ROI> SearchDrawRegion;
+        //当前图像
+        HObject Currimage;
+
         Icommun icommun;
+        /// <summary>
+        /// 算法工厂模式
+        /// </summary>
+        Icommand icommand;
+        string commandmode;
         //bitmap(测试用)
         //Bitmap bitmap_t = null; 
 
@@ -114,10 +128,20 @@ namespace Sight
             {
                 MessageBox.Show("通讯连接失败");
             }
- 
+            //设置初始图像
+            HOperatorSet.ReadImage(out CurrImage, "C:\\Users\\Administrator\\Desktop\\sight.png");
+            hWindow_Final_command.HobjectToHimage(CurrImage);
+
+            hWindow_Final1_grab.hWindowControl.MouseUp += HWindowControl_MouseUp;
         }
+
+        private void HWindowControl_MouseUp(object sender, MouseEventArgs e)
+        { 
+            throw new NotImplementedException();
+        }
+
         // 线程安全的日志更新
-        
+
 
         private void tabPage1_Click(object sender, EventArgs e)
         {
@@ -474,6 +498,42 @@ namespace Sight
                  
         }
 
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
 
+        }
+
+        private void Blob_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void compair_sharp_Click(object sender, EventArgs e)
+        {
+           icommand = Fcommand.icommand("keymatch");
+            icommand.setpara(hWindow_Final_command);
+            commandmode = "2";
+        }
+
+        private void load_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog  openFileDialog = new OpenFileDialog();
+            if(openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                string filename = openFileDialog.FileName;
+                HOperatorSet.ReadImage(out CurrImage, filename);
+                hWindow_Final_command.HobjectToHimage(CurrImage);
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            icommand.start(hWindow_Final_command,CurrImage, commandmode);
+        }
+
+        private void command_keymatch_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
